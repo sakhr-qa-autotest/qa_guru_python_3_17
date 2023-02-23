@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "first-project"
+version = "0.1.0"
+description = "test project"
+authors = ["Viktor <mail@google.com>"]
+readme = "README.md"
+packages = [{include = "first_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.2.1"
+selene = "^2.0.0b16"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^2.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
